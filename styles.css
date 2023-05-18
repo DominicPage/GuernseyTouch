@@ -135,7 +135,7 @@ nav.active {
     margin-right: 10px; /* space between the logo and the text */
 }
 
-section .content {
+.content {
     padding-top: 70px; /* adjust as needed */
 }
 
@@ -225,18 +225,18 @@ main {
     padding: 20px;
 }
 
-#services {
+#news {
     padding: 50px 0;
     text-align: center;
 }
 
-.service-container {
+.news-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.service {
+.article {
     width: 300px;
     margin-bottom: 50px;
     border-radius: 15px;
@@ -247,34 +247,34 @@ main {
     visibility: hidden; /* Hide the element initially */
 }
 
-.service img {
+.article img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
 }
 
-.service h3 {
+.article h3 {
     font-size: 1.1rem;
     margin: 15px 0;
 }
 
-.service p {
+.article p {
     font-size: 0.8rem;
     padding: 0 10px 15px 10px;
 }
   
-.service:hover {
+.article:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     background: #f0f0f0;
 }
 
-.service:hover h3 {
+.article:hover h3 {
     color: #007BFF;  /* Change title color on hover */
 }
 
-.service:hover img {
+.article:hover img {
     filter: grayscale(100%);  /* Change image to grayscale on hover */
 }
 
@@ -462,21 +462,18 @@ section {
     position: relative;
 }
 
-section h2 {
+.section-header {
     position: absolute;
     top: 20px; /* adjust as needed */
     left: 20px; /* adjust as needed */
     z-index: 1; /* ensure it's above other content */
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
-}
-
-.section-header {
     font-size: 4rem; 
     font-family: 'Philosopher', sans-serif;
 }
 
-section h2.fade-in {
+.section-header.fade-in {
     opacity: 1;
 }
 
@@ -485,8 +482,108 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #609966;
     color: white;
     text-align: center;
     padding: 15px 0;
 }
+
+/* CSS Styling for the league results section */ 
+
+/* Game Week Summary */
+#game-week-summary {
+    margin-top: 3rem; /* Adjust according to the size of your h2 */
+    position: relative;
+    align-items: center;
+    padding-top: 130px;
+}
+
+/* League Tables */
+#league-tables {
+  margin: 2rem 0;
+}
+
+/* League Divisions */
+#mens-league,
+#womans-league,
+#mixed-league {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5%;
+}
+
+/* League Tables Styling */
+#league-tables table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  transition: background-color 1s ease-in-out; /* Color transition on load */
+
+}
+
+#league-tables th, 
+#league-tables td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+}
+
+#league-tables th {
+  background-color: #9DC08B;
+  color: #333;
+}
+
+#league-tables tbody tr {
+  transition: background-color 0.3s ease; /* Transition effect for hover */
+}
+
+#league-tables tbody tr:hover {
+  background-color: #f4f4f4; /* Background color on hover */
+  cursor: pointer;
+}
+
+/* Responsive Table Styling */
+@media screen and (max-width: 600px) {
+  #league-tables table, 
+  #league-tables thead, 
+  #league-tables tbody, 
+  #league-tables th, 
+  #league-tables td, 
+  #league-tables tr {
+    display: block;
+  }
+
+  #league-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #league-tables tr { margin: 0 0 1rem 0; }
+
+  #league-tables td { 
+    border: none;
+    border-bottom: 1px solid #ddd; 
+    position: relative;
+    padding-left: 50%; 
+  }
+
+  #league-tables td:before { 
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+
+  #league-tables td:nth-of-type(1):before { content: "Team"; }
+  #league-tables td:nth-of-type(2):before { content: "Points"; }
+  #league-tables td:nth-of-type(3):before { content: "Matches Played"; }
+  #league-tables td:nth-of-type(4):before { content: "Wins"; }
+  #league-tables td:nth-of-type(5):before { content: "Losses"; }
+  #league-tables td:nth-of-type(6):before { content: "Draws"; }
+} 
+
+
+  

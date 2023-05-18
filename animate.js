@@ -1,4 +1,4 @@
-const serviceCards = document.querySelectorAll('.service');
+const serviceCards = document.querySelectorAll('.article');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
