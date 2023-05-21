@@ -3,44 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Business Name</title>
+  <title>Guernsey Touch - Home</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Mulish:wght@200;400&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
   
 </head>
 <body>
   <header>
     <div class="navbar">
-        <div class="logo">
+        <div id="logo">
             <img src="./assets/images/logos/temp_logo.png" alt="Guernsey " class="logo-img">
             <span class="nav-company-name">GUERNSEY TOUCH</span>
         </div>
-        <div class="hamburger-menu">
+        <!-- <div id="nav-toggle" class="hamburger-menu ">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div> -->
+        <button id="nav-toggle" class="hamburger-menu">
+          <div class="hamburger"></div>
+        </button>
+      
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#governance">Governance</a></li>
-          <li><a href="#results">Fixtures & Results</a></li>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="governance.html">Governance</a></li>
+          <li><a href="results.html">Fixtures & Results</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
     <!-- You can place some text here if you want -->
-    <div class="hero-image">
+  </header>
+  <section class="hero">
+      <div class="hero-image hero-image-home">
         <div class="hero-text">
-            <h1>Touch</h1> 
-            <p>A game for everyone</p>
+            <h1 class="hero-text-head">WELCOME</h1> 
+            <p class="hero-text-desc">To the home of Guernsey Touch</p>
         </div>
     </div>
-  </header>
+  </section>
 
   <main>
 
@@ -206,7 +211,7 @@
     </div>
   
     <!-- Link to main Results and Fixtures page -->
-    <a href="/fixtures-and-results">See All Fixtures & Results</a>
+    <a href="./results.html">See All Fixtures & Results</a>
   </section>
   
 
@@ -261,8 +266,9 @@
   </main>
   <br>
   <footer>
-    <p>Copyright &copy; 2023 Your Business Name</p>
+    <p>Copyright &copy; <span id="current-year"></span> Guernsey Touch</p>
   </footer>
+  <script src="script.js"></script>
   <script src="animate.js"></script>
   <script src="nav.js"></script>
   <script src="scroll.js"></script>
