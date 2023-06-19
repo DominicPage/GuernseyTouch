@@ -47,11 +47,9 @@
     </div>
   </section>
     
-
     <main>
  
-         
-    <section id="section-name">
+    <section id="fixtures">
       <h2 class="section-header">Upcoming Fixtures</h2>
       <div class="section-container content">
           <div class="section-item">
@@ -66,12 +64,57 @@
 
     <hr>
 
-    <section id="section-name">
+    <section id="results">
         <h2 class="section-header">Recent Results</h2>
+        <br>
         <div class="section-container content">
             <div class="section-item">
-                <h3>Lorum ipsum</h3>
+                <h3>Results from Week 4</h3>
                 <p>Lorem ipsum feugiat semper ultricies nostra curae felis aptent inceptos metus, porta viverra elit hac semper quis pharetra nec venenatis. Urna euismod neque leo lacus elementum ornare est mattis fusce, mauris feugiat class varius dui vel iac... <a href="">Read more</a></p>
+            </div>
+            <div class="league-results">
+              <div class="results-table">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Bedell Tigers</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>Sure Scorpions</td>
+                  </tr>
+                  <tr>
+                    <td>Guernsey Zimmers</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>Bedell Tigers</td>
+                  </tr>
+                  <tr>
+                    <td>KPMG</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>Hashtag U16</td>
+                  </tr>
+                  <tr>
+                    <td>Luna Lions Mens</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>Ravenscroft</td>
+                  </tr>
+                  <tr>
+                    <td>Hashtag U16</td>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>Ravenscroft</td>
+                  </tr>
+                  <tr>
+                    <td>Healthspan Hurricanes</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>Sure Scorpions</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
             </div>
             <br>
             <p>View full list of Results <a href="./results.html">here</a></p>
@@ -80,7 +123,7 @@
 
       <hr>
 
-      <section id="results">
+      <section id="standings">
         <h2 class="section-header">Standings</h2>
       
         <!-- Game Week Summary -->
@@ -100,78 +143,457 @@
               <thead>
                 <tr>
                   <th>Team</th>
-                  <th>Points</th>
-                  <th>Matches Played</th>
-                  <th>Wins</th>
-                  <th>Losses</th>
-                  <th>Draws</th>
+                  <th>GP</th>
+                  <th>W</th>
+                  <th>D</th>
+                  <th>L</th>
+                  <th>T+</th>
+                  <th>T-</th>
+                  <th>TD</th>
+                  <th>PTS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Team Alpha</td>
-                  <td>30</td>
-                  <td>10</td>
-                  <td>9</td>
-                  <td>1</td>
+                  <td>Luna Lions Mens</td>
+                  <td>4</td>
+                  <td>4</td>
                   <td>0</td>
+                  <td>0</td>
+                  <td>23</td>
+                  <td>5</td>
+                  <td>18</td>
+                  <td>12</td>
                 </tr>
+                <tr>
+                  <td>Bedell Tigers</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>20</td>
+                  <td>8</td>
+                  <td>12</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Sure Scorpions</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>13</td>
+                  <td>7</td>
+                  <td>6</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>KPMG</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>16</td>
+                  <td>11</td>
+                  <td>5</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Ravenscroft</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>15</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Guernsey Zimmers</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>12</td>
+                  <td>22</td>
+                  <td>-10</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Healthspan Hurricanes</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>8</td>
+                  <td>21</td>
+                  <td>-13</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Hashtag U16</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>26</td>
+                  <td>-23</td>
+                  <td>3</td>
+                </tr>
+
+
+
+
+
+
                 <!-- Additional rows as needed -->
               </tbody>
             </table>
           </div>
       
-          <!-- Women's League -->
-          <div id="womans-league">
-            <h3>Women's League</h3>
+           <!-- Ladies League -->
+           <div id="ladies-league">
+            <h3>Ladies League</h3>
             <table>
               <thead>
                 <tr>
                   <th>Team</th>
-                  <th>Points</th>
-                  <th>Matches Played</th>
-                  <th>Wins</th>
-                  <th>Losses</th>
-                  <th>Draws</th>
+                  <th>GP</th>
+                  <th>W</th>
+                  <th>D</th>
+                  <th>L</th>
+                  <th>T+</th>
+                  <th>T-</th>
+                  <th>TD</th>
+                  <th>PTS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Team Beta</td>
-                  <td>28</td>
-                  <td>10</td>
-                  <td>8</td>
-                  <td>1</td>
-                  <td>1</td>
+                  <td>Luna Lions Mens</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>23</td>
+                  <td>5</td>
+                  <td>18</td>
+                  <td>12</td>
                 </tr>
+                <tr>
+                  <td>Bedell Tigers</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>20</td>
+                  <td>8</td>
+                  <td>12</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Sure Scorpions</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>13</td>
+                  <td>7</td>
+                  <td>6</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>KPMG</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>16</td>
+                  <td>11</td>
+                  <td>5</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Ravenscroft</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>15</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Guernsey Zimmers</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>12</td>
+                  <td>22</td>
+                  <td>-10</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Healthspan Hurricanes</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>8</td>
+                  <td>21</td>
+                  <td>-13</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Hashtag U16</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>26</td>
+                  <td>-23</td>
+                  <td>3</td>
+                </tr>
+
+
                 <!-- Additional rows as needed -->
               </tbody>
             </table>
           </div>
       
           <!-- Mixed League -->
+                     <div id="mixed-league">
+                      <h3>Mixed League 1</h3>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Team</th>
+                            <th>GP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>T+</th>
+                            <th>T-</th>
+                            <th>TD</th>
+                            <th>PTS</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Luna Lions Mens</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>23</td>
+                            <td>5</td>
+                            <td>18</td>
+                            <td>12</td>
+                          </tr>
+                          <tr>
+                            <td>Bedell Tigers</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>20</td>
+                            <td>8</td>
+                            <td>12</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Sure Scorpions</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>13</td>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>9</td>
+                          </tr>
+                          <tr>
+                            <td>KPMG</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>16</td>
+                            <td>11</td>
+                            <td>5</td>
+                            <td>8</td>
+                          </tr>
+                          <tr>
+                            <td>Ravenscroft</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>15</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>8</td>
+                          </tr>
+                          <tr>
+                            <td>Guernsey Zimmers</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>12</td>
+                            <td>22</td>
+                            <td>-10</td>
+                            <td>7</td>
+                          </tr>
+                          <tr>
+                            <td>Healthspan Hurricanes</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>8</td>
+                            <td>21</td>
+                            <td>-13</td>
+                            <td>5</td>
+                          </tr>
+                          <tr>
+                            <td>Hashtag U16</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>26</td>
+                            <td>-23</td>
+                            <td>3</td>
+                          </tr>
+          
+          
+          
+          
+          
+          
+                          <!-- Additional rows as needed -->
+                        </tbody>
+                      </table>
+                    </div>
+                              <!-- Mixed 2 League -->
           <div id="mixed-league">
-            <h3>Mixed League</h3>
+            <h3>Mixed League 2</h3>
             <table>
               <thead>
                 <tr>
                   <th>Team</th>
-                  <th>Points</th>
-                  <th>Matches Played</th>
-                  <th>Wins</th>
-                  <th>Losses</th>
-                  <th>Draws</th>
+                  <th>GP</th>
+                  <th>W</th>
+                  <th>D</th>
+                  <th>L</th>
+                  <th>T+</th>
+                  <th>T-</th>
+                  <th>TD</th>
+                  <th>PTS</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Team Gamma</td>
-                  <td>25</td>
-                  <td>10</td>
-                  <td>7</td>
-                  <td>2</td>
-                  <td>1</td>
+                  <td>Luna Lions Mens</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>23</td>
+                  <td>5</td>
+                  <td>18</td>
+                  <td>12</td>
                 </tr>
+                <tr>
+                  <td>Bedell Tigers</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>20</td>
+                  <td>8</td>
+                  <td>12</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Sure Scorpions</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>13</td>
+                  <td>7</td>
+                  <td>6</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>KPMG</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>16</td>
+                  <td>11</td>
+                  <td>5</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Ravenscroft</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>15</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Guernsey Zimmers</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>12</td>
+                  <td>22</td>
+                  <td>-10</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Healthspan Hurricanes</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>8</td>
+                  <td>21</td>
+                  <td>-13</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Hashtag U16</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>26</td>
+                  <td>-23</td>
+                  <td>3</td>
+                </tr>
+
+
+
+
+
+
                 <!-- Additional rows as needed -->
               </tbody>
             </table>
