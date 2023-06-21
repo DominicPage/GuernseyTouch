@@ -657,11 +657,226 @@ main {
     max-height: 70%;
 }
 
+.alt-get-involved {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center; /* Center the content */
+    padding: 100px 60px 60px 60px; /* Provide some padding around the content */
+}
+
+#alt-section-header {
+    margin-bottom: 80px;
+}
+
+.alt-rugby-get-involved-square {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 85%; /* Updated from 300px to 80% */
+    max-width: 950px; /* Optional maximum width */
+    height: auto; /* Updated from 300px to auto */
+    position: relative;
+    margin: 50px auto; /* Center the square */
+    grid-gap: 20px; /* Optional gap between the cards */
+}
+
+.alt-rugby-option {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set a height for larger screens */
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+/* Smaller Screens */
+@media screen and (max-width: 768px) {
+    .alt-rugby-get-involved-square {
+        grid-template-columns: 1fr; /* Stack vertically */
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .alt-rugby-option {
+        width: 100%; /* Set the card width to be 90% of the screen */
+        min-width: 300px;
+        max-width: 480px;
+        margin: 5% auto; /* Center the cards and add some margin */
+    }
+
+    .alt-rugby-get-involved-square {
+        width: 100%; /* Set the container width to be 90% of the screen */
+        height: auto; /* Adjust height */
+        padding-bottom: 90%; /* Maintain aspect ratio */
+    }
+
+    .alt-rugby-get-involved-square::before,
+    .alt-rugby-get-involved-square::after {
+        display: none;
+    }
+}
+
+.alt-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.alt-card-front,
+.alt-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alt-card-front {
+    color: white;
+    font-size: 3.7rem;
+    font-weight: 700;
+    background-size: cover;
+    background-position: center;
+}
+
+#alt-play-touch .alt-card-front {
+    background-image: url('./assets/images/actionShots/Guernsey+Touch+Rugby-5704.jpg');
+}
+
+#alt-volunteer .alt-card-front {
+    background-image: url('./assets/images/actionShots/volunteer.jpg');
+}
+
+#alt-what-is-touch .alt-card-front {
+    background-image: url('./assets/images/actionShots/howTo.jpg');
+}
+
+#alt-become-a-ref .alt-card-front {
+    background-image: url('./assets/images/actionShots/ref.jpg');
+}
+
+.alt-card-back {
+    background-color: #EDF1D6; /* Semi-transparent background */
+    color: #40513B;
+    transform: rotateY(180deg);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Set the background color for each card (Back) */
+#alt-play-touch .alt-card-back {
+    background-color: #EDF1D6; /* Light Green */
+}
+
+#alt-volunteer .alt-card-back {
+    background-color: #9DC08B; /* Medium Green */
+}
+
+#alt-what-is-touch .alt-card-back {
+    background-color: #609966; /* Dark Green */
+    color: #EDF1D6;
+}
+
+#alt-become-a-ref .alt-card-back {
+    background-color: #40513B; /* Very Dark Green */
+    color: #EDF1D6;
+}
+
+/* Cross border */
+.alt-rugby-get-involved-square::before,
+.alt-rugby-get-involved-square::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2); /* Initially more visible */
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.alt-rugby-get-involved-square::before {
+    width: 2px;
+    height: 80%; /* Shorten to not touch the edges */
+    left: 50%;
+    top: 10%; /* Center vertically */
+}
+
+.alt-rugby-get-involved-square::after {
+    width: 80%; /* Shorten to not touch the edges */
+    height: 2px;
+    top: 50%;
+    left: 10%; /* Center horizontally */
+}
+
+.alt-rugby-get-involved-square:hover::before,
+.alt-rugby-get-involved-square:hover::after {
+    background-color: rgba(0, 0, 0, 0.03); /* Make less visible on hover */
+}
+
+/* Card rounded corners */
+.alt-card-front,
+.alt-card-back {
+    border-radius: 15px; /* Add rounded corners */
+}
+
+/* Interactive hover effect */
+.alt-card-front {
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.alt-rugby-option:hover .alt-card-front {
+    transform: scale(1.1); /* Scale up the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Flip effect on hover */
+.alt-rugby-option:hover .alt-card-inner {
+    transform: rotateY(180deg); /* Rotate and slightly increase the card size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* SPONSORS SECTION */
+
+#sponsors {
+    padding: 50px 0 20px 0;
+    text-align: center;
+  }
+  
+  .sponsors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .sponsor-logo {
+    width: 200px;
+    height: 130px;
+    margin: 20px 50px;
+    transition: transform 0.5s ease; /* Add transition property */
+  }
+
+  .sponsor-logo:hover {
+    transform: scale(1.25); /* Enlarge the logo on hover */
+  }
+  
+  .sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  #dojo-shack-logo {
+    max-width: 120%;
+  }
+  
+  /* Add additional CSS rules for styling as needed */
+  
 
 
 #contact {
     padding: 20px;
-    background-color: #f9f9f9; /* Change this to match your design */
 }
 
 .contact-container {
