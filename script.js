@@ -14,3 +14,18 @@ const currentYear = new Date().getFullYear();
 const yearSpan = document.getElementById('current-year');
 yearSpan.textContent = currentYear;
 
+document.addEventListener("DOMContentLoaded", function() {
+  const logos = document.querySelectorAll(".logo");
+
+  logos.forEach(logo => {
+      let rotated = false;
+      logo.addEventListener("click", () => {
+          rotated = !rotated;
+          if (rotated) {
+              logo.style.transform = "scale(1.2) rotate(360deg)";
+          } else {
+              logo.style.transform = "scale(1)";
+          }
+      });
+  });
+});

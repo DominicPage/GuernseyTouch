@@ -47,6 +47,11 @@ body {
   padding: 0;
 }
 
+body, html {
+    height: 100%;
+}
+
+
 .hero,
 nav,
 footer {
@@ -419,6 +424,7 @@ main {
     transition: transform 1.1s ease, box-shadow 0.8s ease, background 0.6s ease;
     animation: slide-in 2s forwards, bounce 1.5s 1s;
     visibility: hidden; /* Hide the element initially */
+    background-color: #9DC08B;
 }
 
 .article img {
@@ -672,8 +678,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 85%; /* Updated from 300px to 80% */
-    max-width: 950px; /* Optional maximum width */
+    width: 90%; /* Updated from 300px to 80% */
+    max-width: 1000px; /* Optional maximum width */
     height: auto; /* Updated from 300px to auto */
     position: relative;
     margin: 50px auto; /* Center the square */
@@ -683,7 +689,7 @@ main {
 .alt-rugby-option {
     position: relative;
     width: 100%;
-    height: 300px; /* Set a height for larger screens */
+    height: 320px; /* Set a height for larger screens */
     perspective: 1000px;
     overflow: hidden;
 }
@@ -785,28 +791,28 @@ main {
 }
 
 /* Cross border */
-.alt-rugby-get-involved-square::before,
+/* .alt-rugby-get-involved-square::before,
 .alt-rugby-get-involved-square::after {
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.2); /* Initially more visible */
+    background-color: rgba(0, 0, 0, 0.2); 
     border-radius: 5px;
-    transition: background-color 0.3s; /* Transition for hover effect */
-}
+    transition: background-color 0.3s; 
+} */
 
-.alt-rugby-get-involved-square::before {
+/* .alt-rugby-get-involved-square::before {
     width: 2px;
-    height: 80%; /* Shorten to not touch the edges */
+    height: 80%; 
     left: 50%;
-    top: 10%; /* Center vertically */
-}
+    top: 10%; 
+} */
 
-.alt-rugby-get-involved-square::after {
-    width: 80%; /* Shorten to not touch the edges */
+/* .alt-rugby-get-involved-square::after {
+    width: 80%; 
     height: 2px;
     top: 50%;
-    left: 10%; /* Center horizontally */
-}
+    left: 10%; 
+} */
 
 .alt-rugby-get-involved-square:hover::before,
 .alt-rugby-get-involved-square:hover::after {
@@ -1216,8 +1222,8 @@ footer {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background: #fff;
-    transition: transform 2.0s ease, box-shadow 2.0s ease, background 0.6s ease;
+    background: #f0f0f0;
+    transition: transform 2.0s ease, box-shadow 2.0s ease, background 1.6s ease;
     animation: slide-in 3s forwards, bounce 2.5s 2s;
     visibility: hidden; /* Hide the element initially */
 }
@@ -1230,10 +1236,11 @@ footer {
 }
 
 .full-article img {
-    width: 100%;
+    max-width: 75%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+    filter: grayscale(100%);
 }
 
 .full-article h2 {
@@ -1255,11 +1262,11 @@ footer {
 .full-article:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    background: #f0f0f0;
+    background: #EDF1D6;
 }
 
 .full-article:hover img {
-    filter: grayscale(100%);  /* Change image to grayscale on hover */
+    filter: grayscale(0%);  /* Change image to grayscale on hover */
 }
 
 /* Styling for the table *//* Styling for the table */
@@ -1359,3 +1366,116 @@ footer {
     }
   }
   
+  footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.7);
+}
+
+.contact-us button {
+    background-color: #609966;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    animation: appear 1s ease-in-out forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#contact-section-alt {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-container-alt {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Logo Styles */
+.logos-alt .logo-alt {
+    width: 100px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logos-alt .logo-alt:hover {
+    transform: scale(1.2);
+}
+
+/* Contact Details Styles */
+.contact-details-alt .contact-item-alt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contact-details-alt img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Governance Link Styles */
+.governance-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.governance-link:hover {
+    background-color: #444;
+}
+
+
+
+
+
+
